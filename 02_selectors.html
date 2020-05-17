@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Selectors</title>
+  <style>
+    /* choosing elements by id */
+    #welcome {
+      color: green;
+    }
+
+    /* using classes */
+    .secondary-heading {
+      color: orange;
+    }
+
+    /* using pseudo classes */
+    h2:hover {
+      color: blue;
+    }
+
+    /* multiple selectors */
+    h1, h2 {
+      border: 1px solid black;
+    }
+
+    /* nested selector */
+    div p {
+      font-size: 20px;
+    }
+
+    /* selectors  based on attribute*/
+    h2[class="secondary-heading"] {
+      color: black;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <div>
+    <h1 id="welcome">News site</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </div>
+
+  <div>
+    <h2 class="secondary-heading">New study claims dogs are better than cats</h2>
+    <p>Lorem ipsum dolor sit.</p>
+  </div>
+  
+  
+</body>
+</html>
