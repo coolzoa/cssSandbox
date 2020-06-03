@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-shadows</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .box {
+            padding: 1rem;
+            margin: 1rem;
+            background: coral;
+            color: white;
+            
+            /* offsetX | offsetY | color */
+            box-shadow: 10px 10px teal;
+        }
+
+        #box-1 {
+            /* offsetX | offsetY | blur-radius | color */
+            box-shadow: 5px 10px 20px orange;
+        }
+
+        #box-2 {
+            /* offsetX | offsetY | blur-radius | color */
+            /* negative values */
+            box-shadow: -5px -5px red;
+        }
+
+        #box-3 {
+            /* offsetX | offsetY | blur-radius | spread-radius | color */
+            box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.2);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <h3>with blur radius</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, unde!</p>
+        </div>
+        <div class="box" id="box-2">
+            <h3>negative offset</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, unde!</p>
+        </div>
+        <div class="box" id="box-3">
+            <h3>Subtle shadow with spread radius</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, unde!</p>
+        </div>
+    </div>
+    
+</body>
+</html>
